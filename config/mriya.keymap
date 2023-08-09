@@ -21,6 +21,17 @@
 };
 
 / {
+    behaviors {
+        custom_alt: custom_alt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CUSTOM_ALT";
+            #binding-cells = <0>;
+            bindings =
+                <&kp RIGHT_ALT>,
+                <&kp LA(SPACE)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
